@@ -4,15 +4,226 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/matrix"
     tools:context=".MainActivity">
 
-    <TextView
+    <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:background="@color/grid_background"
+        android:columnCount="4"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/backspace"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:shadowColor="@color/teal_700"
+            android:text="@string/button_c"
+            android:textColor="@color/execute_button"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/percent"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_percent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@color/execute_button"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/division"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_div"
+            android:textColor="@color/execute_button"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/multiply"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_mult"
+            android:textColor="@color/execute_button"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_7"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_7"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_8"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_8"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_9"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_9"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/deduction"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_deduct"
+            android:textColor="@color/execute_button"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_4"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_4"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_5"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_5"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_6"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_6"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/induction"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_induct"
+            android:textColor="@color/execute_button"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_1"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_2"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_3"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/equal"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_equal"
+            android:textColor="@color/execute_button"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_0"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_0"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/pointer"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_margin="@dimen/button_margins"
+            android:background="@color/button_background"
+            android:text="@string/button_pointer"
+            android:textSize="@dimen/text_on_button_size"
+            android:textStyle="bold" />
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_height"
+        android:layout_marginBottom="@dimen/edittext_to_grid_margin"
+        android:background="@color/design_default_color_background"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout"
+        tools:ignore="Autofill,LabelFor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
