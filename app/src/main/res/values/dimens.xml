@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_on_button_size">22sp</dimen>
+    <dimen name="button_margins">5dp</dimen>
+    <dimen name="button_size">50dp</dimen>
+    <dimen name="edittext_to_grid_margin">5dp</dimen>
+    <dimen name="text_height">30dp</dimen>
+    <dimen name="text_size">20sp</dimen>
+</resources>
