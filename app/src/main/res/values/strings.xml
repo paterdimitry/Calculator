@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Calculator</string>
     <string name="button_c">C</string>
-    <string name="button_percent">%</string>
+    <string name="button_sign">&#177;</string>
     <string name="button_mult">X</string>
-    <string name="button_div">/</string>
+    <string name="button_div">&#247;</string>
     <string name="button_7">7</string>
     <string name="button_8">8</string>
     <string name="button_9">9</string>
