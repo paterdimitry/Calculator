@@ -18,198 +18,106 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/clear"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
-            android:shadowColor="@color/teal_700"
+            style="@style/MatrixStyleButtons"
             android:text="@string/button_c"
-            android:textColor="@color/execute_button"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            android:textColor="@color/execute_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/sign"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
+            style="@style/MatrixStyleButtons"
             android:text="@string/button_sign"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button"
-            android:textColor="@color/execute_button"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            android:textColor="@color/execute_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/division"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
+            style="@style/MatrixStyleButtons"
             android:text="@string/button_div"
-            android:textColor="@color/execute_button"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            android:textColor="@color/execute_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/multiply"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
+            style="@style/MatrixStyleButtons"
             android:text="@string/button_mult"
-            android:textColor="@color/execute_button"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            android:textColor="@color/execute_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_7"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
-            android:text="@string/button_7"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            style="@style/MatrixStyleButtons"
+            android:text="@string/button_7" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_8"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
-            android:text="@string/button_8"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            style="@style/MatrixStyleButtons"
+            android:text="@string/button_8" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_9"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
-            android:text="@string/button_9"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            style="@style/MatrixStyleButtons"
+            android:text="@string/button_9" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/deduction"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
+            style="@style/MatrixStyleButtons"
             android:text="@string/button_deduct"
-            android:textColor="@color/execute_button"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            android:textColor="@color/execute_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_4"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
-            android:text="@string/button_4"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            style="@style/MatrixStyleButtons"
+            android:text="@string/button_4" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_5"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
-            android:text="@string/button_5"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            style="@style/MatrixStyleButtons"
+            android:text="@string/button_5" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_6"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
-            android:text="@string/button_6"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            style="@style/MatrixStyleButtons"
+            android:text="@string/button_6" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/induction"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
+            style="@style/MatrixStyleButtons"
             android:text="@string/button_induct"
-            android:textColor="@color/execute_button"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            android:textColor="@color/execute_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_1"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
-            android:text="@string/button_1"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            style="@style/MatrixStyleButtons"
+            android:text="@string/button_1" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_2"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
-            android:text="@string/button_2"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            style="@style/MatrixStyleButtons"
+            android:text="@string/button_2" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_3"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
-            android:text="@string/button_3"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            style="@style/MatrixStyleButtons"
+            android:text="@string/button_3" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/equal"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
+            style="@style/MatrixStyleButtons"
             android:layout_rowSpan="2"
             android:layout_gravity="fill"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
             android:text="@string/button_equal"
-            android:textColor="@color/execute_button"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            android:textColor="@color/execute_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_0"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
+            style="@style/MatrixStyleButtons"
             android:layout_columnSpan="2"
             android:layout_gravity="fill"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
-            android:text="@string/button_0"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            android:text="@string/button_0" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/pointer"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@color/button_background"
-            android:text="@string/button_pointer"
-            android:textSize="@dimen/text_on_button_size"
-            android:textStyle="bold" />
+            style="@style/MatrixStyleButtons"
+            android:text="@string/button_pointer" />
     </GridLayout>
 
     <EditText
