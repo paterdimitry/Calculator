@@ -3,6 +3,7 @@ package com.geekbrain.calculator;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     private MathOperations mathOperations;
     private Operation operation;
 
+    private static final String THEME = "Settings";
+
     private final String mathOperationKey = "mathOperationKey";
     private final String numberBuilderKey = "numberBuilderKey";
     private final String textViewKey = "textViewKey";
@@ -25,8 +28,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(getIntent().getIntExtra(THEME, R.style.MatrixStyle));
         setContentView(R.layout.activity_main);
+
         initView();
+        initViewSettingsButton();
+    }
+
+    private void initViewSettingsButton() {
+        Button viewSettingsButton = findViewById(R.id.viewSettings);
+        viewSettingsButton.setOnClickListener(v ->{
+            Intent runSettings = new Intent(MainActivity.this, SettingsActivity.class);
+            startActivity(runSettings);
+        });
     }
 
     //Для адаптации поворота экрана сохраняем состояние до переворота

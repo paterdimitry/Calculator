@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/matrix"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:theme="@style/MatrixStyle">
 
     <GridLayout
         android:id="@+id/gridLayout"
@@ -20,88 +20,73 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/clear"
-            style="@style/MatrixStyleButtons"
             android:text="@string/button_c"
             android:textColor="@color/execute_button" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/sign"
-            style="@style/MatrixStyleButtons"
+
             android:text="@string/button_sign"
             android:textColor="@color/execute_button" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/division"
-            style="@style/MatrixStyleButtons"
             android:text="@string/button_div"
             android:textColor="@color/execute_button" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/multiply"
-            style="@style/MatrixStyleButtons"
             android:text="@string/button_mult"
             android:textColor="@color/execute_button" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_7"
-            style="@style/MatrixStyleButtons"
             android:text="@string/button_7" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_8"
-            style="@style/MatrixStyleButtons"
             android:text="@string/button_8" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_9"
-            style="@style/MatrixStyleButtons"
             android:text="@string/button_9" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/deduction"
-            style="@style/MatrixStyleButtons"
             android:text="@string/button_deduct"
             android:textColor="@color/execute_button" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_4"
-            style="@style/MatrixStyleButtons"
             android:text="@string/button_4" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_5"
-            style="@style/MatrixStyleButtons"
             android:text="@string/button_5" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_6"
-            style="@style/MatrixStyleButtons"
             android:text="@string/button_6" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/induction"
-            style="@style/MatrixStyleButtons"
             android:text="@string/button_induct"
             android:textColor="@color/execute_button" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_1"
-            style="@style/MatrixStyleButtons"
             android:text="@string/button_1" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_2"
-            style="@style/MatrixStyleButtons"
             android:text="@string/button_2" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_3"
-            style="@style/MatrixStyleButtons"
             android:text="@string/button_3" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/equal"
-            style="@style/MatrixStyleButtons"
             android:layout_rowSpan="2"
             android:layout_gravity="fill"
             android:text="@string/button_equal"
@@ -109,14 +94,12 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_0"
-            style="@style/MatrixStyleButtons"
             android:layout_columnSpan="2"
             android:layout_gravity="fill"
             android:text="@string/button_0" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/pointer"
-            style="@style/MatrixStyleButtons"
             android:text="@string/button_pointer" />
     </GridLayout>
 
@@ -133,5 +116,13 @@
         app:layout_constraintEnd_toEndOf="@+id/gridLayout"
         app:layout_constraintStart_toStartOf="@+id/gridLayout"
         tools:ignore="Autofill,LabelFor" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/viewSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/settings"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
