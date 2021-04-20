@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="@dimen/settings_text_size"
+        android:gravity="center"
+        android:text="@string/settings" />
+
+           <com.google.android.material.button.MaterialButton
+            android:id="@+id/matrixButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/matrixstyle"
+            android:textColor="@color/yellow"
+            android:textStyle="italic"
+            android:textSize="@dimen/settings_text_size"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mathButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/math_style"
+            android:textColor="@color/yellow"
+            android:textStyle="italic"
+            android:textSize="@dimen/settings_text_size"/>
+
+
+</LinearLayout>
